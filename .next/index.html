@@ -24,7 +24,14 @@
             background-size: cover; /* Adjust as needed */
             background-repeat: no-repeat;
             background-position: center center; /* Adjust as needed */
-            background-attachment: fixed; /* Optional: keeps background fixed during scroll */
+            /* background-attachment: fixed; */ /* Removed this line */
+            position: relative; /* Establish stacking context */
+            z-index: 0; /* Ensure body is behind content */
+        }
+        .main-content-wrapper { /* Added a class for the main div */
+            position: relative; /* Ensure content is positioned */
+            z-index: 1; /* Ensure content is above body background */
+            background-color: transparent; /* Ensure it doesn't obscure body background unless intended */
         }
         .collection-section {
             background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background like example */
