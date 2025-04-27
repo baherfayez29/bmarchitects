@@ -1,0 +1,11 @@
+/.next/
+/out/
+
+/node_modules
+/ .pnp
+.pnp.js
+
+/build
+
+.DS_Store
+* .pem
